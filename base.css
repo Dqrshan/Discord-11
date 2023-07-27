@@ -33,18 +33,6 @@
     display: none;
 } */
 
-/* custom */
-:root {
-    --blue-button-bg: #5865f2;
-    --blue-button-hover: #4b58cf;
-    --blue-button-border: #5865f2;
-    --blue-button-hover-border: #4b58cf;
-    --blue-button-top: #5865f2;
-    --blue-button-hover-top: #4b58cf;
-    --blue-button-bottom: #5865f2;
-    --blue-button-hover-bottom: #4b58cf;
-}
-
 /* Top drag */
 .wordmarkWindows-2dq6rw {
     padding: 0;
