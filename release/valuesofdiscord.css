@@ -26,7 +26,12 @@
     --windark-button-hover-top: #313131;
     --windark-button-hover-bottom: #2b2b2b;
 
-    --windark-box1: linear-gradient(0deg, rgba(44, 44, 44, 0.15), rgba(44, 44, 44, 0.15)), rgba(44, 44, 44, 0.96);
+    --windark-box1: linear-gradient(
+            0deg,
+            rgba(44, 44, 44, 0.15),
+            rgba(44, 44, 44, 0.15)
+        ),
+        rgba(44, 44, 44, 0.96);
 
     --winlight1: #f3f3f3;
     --winlight2: #eeeeee;
@@ -55,14 +60,14 @@
 
     --winlight-box1: rgba(252, 252, 252, 0.85);
 
-    --blue-button-bg: hsl(var(--H), calc(1*var(--S)), calc(1*var(--L)));
-    --blue-button-border: hsl(var(--H), calc(1*var(--S)), calc(1.03*var(--L)));
-    --blue-button-top: hsl(var(--H), calc(1*var(--S)), calc(1.03*var(--L)));
-    --blue-button-bottom: hsl(var(--H), calc(0.7*var(--S)), calc(0.90*var(--L)));
-    --blue-button-hover: hsl(var(--H), calc(0.76*var(--S)), calc(0.91*var(--L)));
-    --blue-button-hover-border: hsl(var(--H), calc(0.76*var(--S)), calc(0.96*var(--L)));
-    --blue-button-hover-top: hsl(var(--H), calc(0.76*var(--S)), calc(0.96*var(--L)));
-    --blue-button-hover-bottom: hsl(var(--H), calc(0.58*var(--S)), calc(0.83*var(--L)));
+    --blue-button-bg: #5865f2;
+    --blue-button-hover: #4b58cf;
+    --blue-button-border: #5865f2;
+    --blue-button-hover-border: #4b58cf;
+    --blue-button-top: #5865f2;
+    --blue-button-hover-top: #4b58cf;
+    --blue-button-bottom: #5865f2;
+    --blue-button-hover-bottom: #4b58cf;
 
     --wintransition: all 200ms;
 
@@ -75,26 +80,32 @@
     --winblur2: 60px;
 
     --noise256: url(https://raw.githubusercontent.com/zuzumi-f/Discord-11/main/release/noise256.png);
-    --noise-dark: linear-gradient(0deg, rgba(44, 44, 44, 0.15), rgba(44, 44, 44, 0.15)), rgba(44, 44, 44, 0.96);
+    --noise-dark: linear-gradient(
+            0deg,
+            rgba(44, 44, 44, 0.15),
+            rgba(44, 44, 44, 0.15)
+        ),
+        rgba(44, 44, 44, 0.96);
     --noise-light: rgba(252, 252, 252, 0.85);
     --noiseblend-dark: normal, color, luminosity;
     --noiseblend-light: normal, luminosity;
 }
 
 /* Discord Color */
-.theme-dark, .theme-light {
+.theme-dark,
+.theme-light {
     --text-link: var(--blue-500);
     --text-link-low-saturation: var(--blue-530);
 }
 
 .theme-dark {
-    --info-positive-background: #393D1B;
-    --info-positive-foreground: #6CCB5F;
+    --info-positive-background: #393d1b;
+    --info-positive-foreground: #6ccb5f;
     --info-warning-background: #433519;
-    --info-warning-foreground: #FCE100;
+    --info-warning-foreground: #fce100;
     --info-danger-background: #442726;
-    --info-danger-foreground: #FF99A4;
-    --status-positive-background: #393D1B;
+    --info-danger-foreground: #ff99a4;
+    --status-positive-background: #393d1b;
     --status-positive-text: #fff;
     --status-warning-background: #433519;
     --status-danger-background: #442726;
@@ -127,16 +138,16 @@
 }
 
 .theme-light {
-    --info-positive-background: #DFF6DD;
-    --info-positive-foreground: #0F7B0F;
-    --info-warning-background: #FFF4CE;
-    --info-warning-foreground: #9D5D00;
-    --info-danger-background: #FDE7E9;
-    --info-danger-foreground: #C42B1C;
-    --status-positive-background: #DFF6DD;
+    --info-positive-background: #dff6dd;
+    --info-positive-foreground: #0f7b0f;
+    --info-warning-background: #fff4ce;
+    --info-warning-foreground: #9d5d00;
+    --info-danger-background: #fde7e9;
+    --info-danger-foreground: #c42b1c;
+    --status-positive-background: #dff6dd;
     --status-positive-text: #000;
-    --status-warning-background: #FFF4CE;
-    --status-danger-background: #FDE7E9;
+    --status-warning-background: #fff4ce;
+    --status-danger-background: #fde7e9;
     --status-danger-text: #000;
 
     --background-primary: var(--winlight4);
@@ -166,58 +177,59 @@
 }
 
 /* Blue */
-.default-colors, :root {
-    --blue-100-hsl: var(--H) var(--S) calc(2*var(--L));
-    --blue-130-hsl: var(--H) var(--S) calc(1.92*var(--L));
-    --blue-160-hsl: var(--H) var(--S) calc(1.85*var(--L));
-    --blue-200-hsl: var(--H) var(--S) calc(1.78*var(--L));
-    --blue-230-hsl: var(--H) var(--S) calc(1.71*var(--L));
-    --blue-260-hsl: var(--H) var(--S) calc(1.63*var(--L));
-    --blue-300-hsl: var(--H) var(--S) calc(1.56*var(--L));
-    --blue-330-hsl: var(--H) var(--S) calc(1.49*var(--L));
-    --blue-345-hsl: var(--H) var(--S) calc(1.42*var(--L));
-    --blue-360-hsl: var(--H) var(--S) calc(1.35*var(--L));
-    --blue-400-hsl: var(--H) var(--S) calc(1.28*var(--L));
-    --blue-430-hsl: var(--H) var(--S) calc(1.21*var(--L));
-    --blue-460-hsl: var(--H) var(--S) calc(1.14*var(--L));
-    --blue-500-hsl: var(--H) var(--S) calc(1*var(--L));
-    --blue-530-hsl: var(--H) calc(0.75*var(--S)) calc(0.99*var(--L));
-    --blue-560-hsl: var(--H) calc(0.60*var(--S)) calc(0.91*var(--L));
-    --blue-600-hsl: var(--H) calc(0.54*var(--S)) calc(0.83*var(--L));
-    --blue-630-hsl: var(--H) calc(0.54*var(--S)) calc(0.74*var(--L));
-    --blue-660-hsl: var(--H) calc(0.54*var(--S)) calc(0.66*var(--L));
-    --blue-700-hsl: var(--H) calc(0.54*var(--S)) calc(0.58*var(--L));
-    --blue-730-hsl: var(--H) calc(0.54*var(--S)) calc(0.49*var(--L));
-    --blue-760-hsl: var(--H) calc(0.54*var(--S)) calc(0.41*var(--L));
-    --blue-800-hsl: var(--H) calc(0.54*var(--S)) calc(0.33*var(--L));
-    --blue-830-hsl: var(--H) calc(0.54*var(--S)) calc(0.24*var(--L));
-    --blue-860-hsl: var(--H) calc(0.54*var(--S)) calc(0.16*var(--L));
-    --blue-900-hsl: var(--H) calc(0.54*var(--S)) calc(0*var(--L));
+.default-colors,
+:root {
+    --blue-100-hsl: var(--H) var(--S) calc(2 * var(--L));
+    --blue-130-hsl: var(--H) var(--S) calc(1.92 * var(--L));
+    --blue-160-hsl: var(--H) var(--S) calc(1.85 * var(--L));
+    --blue-200-hsl: var(--H) var(--S) calc(1.78 * var(--L));
+    --blue-230-hsl: var(--H) var(--S) calc(1.71 * var(--L));
+    --blue-260-hsl: var(--H) var(--S) calc(1.63 * var(--L));
+    --blue-300-hsl: var(--H) var(--S) calc(1.56 * var(--L));
+    --blue-330-hsl: var(--H) var(--S) calc(1.49 * var(--L));
+    --blue-345-hsl: var(--H) var(--S) calc(1.42 * var(--L));
+    --blue-360-hsl: var(--H) var(--S) calc(1.35 * var(--L));
+    --blue-400-hsl: var(--H) var(--S) calc(1.28 * var(--L));
+    --blue-430-hsl: var(--H) var(--S) calc(1.21 * var(--L));
+    --blue-460-hsl: var(--H) var(--S) calc(1.14 * var(--L));
+    --blue-500-hsl: var(--H) var(--S) calc(1 * var(--L));
+    --blue-530-hsl: var(--H) calc(0.75 * var(--S)) calc(0.99 * var(--L));
+    --blue-560-hsl: var(--H) calc(0.6 * var(--S)) calc(0.91 * var(--L));
+    --blue-600-hsl: var(--H) calc(0.54 * var(--S)) calc(0.83 * var(--L));
+    --blue-630-hsl: var(--H) calc(0.54 * var(--S)) calc(0.74 * var(--L));
+    --blue-660-hsl: var(--H) calc(0.54 * var(--S)) calc(0.66 * var(--L));
+    --blue-700-hsl: var(--H) calc(0.54 * var(--S)) calc(0.58 * var(--L));
+    --blue-730-hsl: var(--H) calc(0.54 * var(--S)) calc(0.49 * var(--L));
+    --blue-760-hsl: var(--H) calc(0.54 * var(--S)) calc(0.41 * var(--L));
+    --blue-800-hsl: var(--H) calc(0.54 * var(--S)) calc(0.33 * var(--L));
+    --blue-830-hsl: var(--H) calc(0.54 * var(--S)) calc(0.24 * var(--L));
+    --blue-860-hsl: var(--H) calc(0.54 * var(--S)) calc(0.16 * var(--L));
+    --blue-900-hsl: var(--H) calc(0.54 * var(--S)) calc(0 * var(--L));
 
-    --brand-100-hsl: var(--H) var(--S) calc(2*var(--L));
-    --brand-130-hsl: var(--H) var(--S) calc(1.92*var(--L));
-    --brand-160-hsl: var(--H) var(--S) calc(1.85*var(--L));
-    --brand-200-hsl: var(--H) var(--S) calc(1.78*var(--L));
-    --brand-230-hsl: var(--H) var(--S) calc(1.71*var(--L));
-    --brand-260-hsl: var(--H) var(--S) calc(1.63*var(--L));
-    --brand-300-hsl: var(--H) var(--S) calc(1.56*var(--L));
-    --brand-330-hsl: var(--H) var(--S) calc(1.49*var(--L));
-    --brand-345-hsl: var(--H) var(--S) calc(1.42*var(--L));
-    --brand-360-hsl: var(--H) var(--S) calc(1.35*var(--L));
-    --brand-400-hsl: var(--H) var(--S) calc(1.28*var(--L));
-    --brand-430-hsl: var(--H) var(--S) calc(1.21*var(--L));
-    --brand-460-hsl: var(--H) var(--S) calc(1.14*var(--L));
-    --brand-500-hsl: var(--H) var(--S) calc(1*var(--L));
-    --brand-530-hsl: var(--H) calc(0.75*var(--S)) calc(0.99*var(--L));
-    --brand-560-hsl: var(--H) calc(0.60*var(--S)) calc(0.91*var(--L));
-    --brand-600-hsl: var(--H) calc(0.54*var(--S)) calc(0.83*var(--L));
-    --brand-630-hsl: var(--H) calc(0.54*var(--S)) calc(0.74*var(--L));
-    --brand-660-hsl: var(--H) calc(0.54*var(--S)) calc(0.66*var(--L));
-    --brand-700-hsl: var(--H) calc(0.54*var(--S)) calc(0.58*var(--L));
-    --brand-730-hsl: var(--H) calc(0.54*var(--S)) calc(0.49*var(--L));
-    --brand-760-hsl: var(--H) calc(0.54*var(--S)) calc(0.41*var(--L));
-    --brand-800-hsl: var(--H) calc(0.54*var(--S)) calc(0.33*var(--L));
-    --brand-830-hsl: var(--H) calc(0.54*var(--S)) calc(0.24*var(--L));
-    --brand-860-hsl: var(--H) calc(0.54*var(--S)) calc(0.16*var(--L));
-    --brand-900-hsl: var(--H) calc(0.54*var(--S)) calc(0*var(--L));
+    --brand-100-hsl: var(--H) var(--S) calc(2 * var(--L));
+    --brand-130-hsl: var(--H) var(--S) calc(1.92 * var(--L));
+    --brand-160-hsl: var(--H) var(--S) calc(1.85 * var(--L));
+    --brand-200-hsl: var(--H) var(--S) calc(1.78 * var(--L));
+    --brand-230-hsl: var(--H) var(--S) calc(1.71 * var(--L));
+    --brand-260-hsl: var(--H) var(--S) calc(1.63 * var(--L));
+    --brand-300-hsl: var(--H) var(--S) calc(1.56 * var(--L));
+    --brand-330-hsl: var(--H) var(--S) calc(1.49 * var(--L));
+    --brand-345-hsl: var(--H) var(--S) calc(1.42 * var(--L));
+    --brand-360-hsl: var(--H) var(--S) calc(1.35 * var(--L));
+    --brand-400-hsl: var(--H) var(--S) calc(1.28 * var(--L));
+    --brand-430-hsl: var(--H) var(--S) calc(1.21 * var(--L));
+    --brand-460-hsl: var(--H) var(--S) calc(1.14 * var(--L));
+    --brand-500-hsl: var(--H) var(--S) calc(1 * var(--L));
+    --brand-530-hsl: var(--H) calc(0.75 * var(--S)) calc(0.99 * var(--L));
+    --brand-560-hsl: var(--H) calc(0.6 * var(--S)) calc(0.91 * var(--L));
+    --brand-600-hsl: var(--H) calc(0.54 * var(--S)) calc(0.83 * var(--L));
+    --brand-630-hsl: var(--H) calc(0.54 * var(--S)) calc(0.74 * var(--L));
+    --brand-660-hsl: var(--H) calc(0.54 * var(--S)) calc(0.66 * var(--L));
+    --brand-700-hsl: var(--H) calc(0.54 * var(--S)) calc(0.58 * var(--L));
+    --brand-730-hsl: var(--H) calc(0.54 * var(--S)) calc(0.49 * var(--L));
+    --brand-760-hsl: var(--H) calc(0.54 * var(--S)) calc(0.41 * var(--L));
+    --brand-800-hsl: var(--H) calc(0.54 * var(--S)) calc(0.33 * var(--L));
+    --brand-830-hsl: var(--H) calc(0.54 * var(--S)) calc(0.24 * var(--L));
+    --brand-860-hsl: var(--H) calc(0.54 * var(--S)) calc(0.16 * var(--L));
+    --brand-900-hsl: var(--H) calc(0.54 * var(--S)) calc(0 * var(--L));
 }
