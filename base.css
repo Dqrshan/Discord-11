@@ -2548,11 +2548,11 @@ div[class="container-1-ERn5 clickable-vvKY2q hasBanner-2IrYih bannerVisible-Vkyg
 }
 
 .theme-dark .colorable-3rVGna.red-3T8maV .centerIcon-JYpTUi {
-    color: #ff99a4 !important;
+    color: #fff !important;
 }
 
 .theme-light .colorable-3rVGna.red-3T8maV .centerIcon-JYpTUi {
-    color: #c42b1c !important;
+    color: #000 !important;
 }
 
 .theme-dark .colorable-3rVGna.primaryDark-2UJt1G,
@@ -2795,11 +2795,11 @@ div[class="container-1-ERn5 clickable-vvKY2q hasBanner-2IrYih bannerVisible-Vkyg
 }
 
 .theme-dark .lookFilled-1H2Jvj.colorBrand-2M3O3N {
-    color: #000 !important;
+    color: #fff !important;
 }
 
 .theme-light .lookFilled-1H2Jvj.colorBrand-2M3O3N {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 #app-mount .button-35nmN9 {
@@ -2824,11 +2824,11 @@ div[class="container-1-ERn5 clickable-vvKY2q hasBanner-2IrYih bannerVisible-Vkyg
     border-bottom-color: #1c6436 !important;
 }
 .theme-dark .lookFilled-1H2Jvj.colorGreen-jIPCAS {
-    color: #000 !important;
+    color: #fff !important;
 }
 
 .theme-light .lookFilled-1H2Jvj.colorGreen-jIPCAS {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 /* Gray Buttons */
